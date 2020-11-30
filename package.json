@@ -8,7 +8,7 @@
   },
   "author": "Pedro Kehl",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/server.ts",
     "watch": "nodemon",
     "build": "tsc",
     "test": "jest --coverage --verbose",
@@ -16,8 +16,11 @@
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "@types/jest": "^24.0.13",
     "@types/node": "^12.0.2",
+    "@types/express": "^4.17.1",
     "jest": "^24.0.0",
     "nodemon": "^1.19.0",
     "ts-jest": "^24.0.0",
